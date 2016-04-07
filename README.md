@@ -14,6 +14,10 @@ If you run maven root project (or fermat-db-node-plugin-example) its have TestNo
 
 Using jooq code generation is a guarantee that will not be written manually SQL in java code and this will prevent SQL errors.
 
+To skip boilerplate and easier maintenance fermat-db-node-plugin-example project use the following dependency:
+![Package Dependency](https://github.com/sytolk/db-example/blob/master/doc/diagram.png)
+
+
 
 
 
