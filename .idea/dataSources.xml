@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="248221083">
+    <data-source source="LOCAL" name="Sqlite (Xerial) - node.db" uuid="ad3b9bd5-45b4-4a86-9120-05e913779d38">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/fermat-db-node-plugin-example/node.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.bitdubai.fermat</groupId>
+        <artifactId>fermat-db</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <artifactId>fermat-db-sqlite-template</artifactId>
+    <name>Fermat DataBase Sqlite Template Module</name>
+    <packaging>jar</packaging>
+
+    <properties>
+        <sqlite-jdbc>3.8.11.2</sqlite-jdbc>
+        <!--database-->
+        <db.driver>org.sqlite.JDBC</db.driver>
+        <db.url>jdbc:sqlite:${project.basedir}/node.db</db.url>
+        <!--<db.username></db.username>
+        <db.password></db.password>-->
+    </properties>
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.4.1</version>
+                <executions>
+                    <execution>
+                        <id>enforce-property</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireProperty>
+                                    <property>db.url</property>
+                                    <message>You must set a db.url property like "jdbc:sqlite:${project.basedir}/fermat.db"</message>
+                                </requireProperty>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- The jOOQ code generator plugin -->
+            <plugin>
+                <inherited>true</inherited>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq-codegen-maven</artifactId>
+                <version>${org.jooq.version}</version>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>org.xerial</groupId>
+                        <artifactId>sqlite-jdbc</artifactId>
+                        <version>${sqlite-jdbc}</version>
+                    </dependency>
+                </dependencies>
+
+                <executions>
+                    <execution>
+                        <id>generate-sqlite</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+
+                            <jdbc>
+                                <driver>${db.driver}</driver>
+                                <url>${db.url}</url>
+                                <!--<user>${db.username}</user>
+                                <password>${db.password}</password>-->
+                            </jdbc>
+                            <generator>
+                                <database>
+                                    <name>org.jooq.util.sqlite.SQLiteDatabase</name>
+                                    <includes>.*</includes>
+                                    <excludes></excludes>
+                                    <inputSchema></inputSchema>
+                                </database>
+                                <generate>
+                                    <!-- Generation flags: See advanced configuration properties -->
+                                    <deprecated>false</deprecated>
+                                    <pojos>true</pojos>
+                                    <!--<interfaces>true</interfaces>-->
+                                    <daos>true</daos>
+                                </generate>
+                                <target>
+                                    <packageName>com.bitdubai.fermat.db.sqlite.generated</packageName>
+                                    <directory>target/generated-sources/jooq-sqlite</directory>
+                                </target>
+                            </generator>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- Database access -->
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq</artifactId>
+            <version>${org.jooq.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>${sqlite-jdbc}</version>
+        </dependency>
+
+    </dependencies>
+</project>

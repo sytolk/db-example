@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>MAVEN</ID>
+  <OriginalElement>com.bitdubai.fermat:fermat-db-node-plugin-example:1.0.0</OriginalElement>
+  <nodes>
+    <node x="0.0" y="174.30870279146143">com.bitdubai.fermat:fermat-db-node-plugin-example:1.0.0</node>
+    <node x="380.0" y="75.80870279146143">org.jooq:jooq:jar:3.7.3</node>
+    <node x="358.5" y="276.2697044334975">org.xerial:sqlite-jdbc:jar:3.8.11.2</node>
+    <node x="343.0" y="149.80870279146143">org.springframework:spring-context:jar:4.2.5.RELEASE</node>
+    <node x="575.5" y="161.03571428571428">org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-aop:jar:4.2.5.RELEASE</node>
+    <node x="802.0" y="165.3444170771757">org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-aop:jar:4.2.5.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+    <node x="796.0" y="249.51436781609198">org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-beans:jar:4.2.5.RELEASE</node>
+    <node x="1018.0" y="140.3776683087028">org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE</node>
+    <node x="1213.0" y="140.3776683087028">org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE/commons-logging:commons-logging:jar:1.2</node>
+    <node x="779.0" y="105.75">org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-expression:jar:4.2.5.RELEASE</node>
+    <node x="581.5" y="257.7697044334975">org.springframework:spring-tx:jar:4.2.5.RELEASE</node>
+    <node x="356.0" y="348.2697044334975">org.springframework:spring-jdbc:jar:4.2.5.RELEASE</node>
+    <node x="366.0" y="420.2697044334975">com.zaxxer:HikariCP:jar:2.4.5</node>
+    <node x="586.0" y="420.2697044334975">com.zaxxer:HikariCP:jar:2.4.5/org.slf4j:slf4j-api:jar:1.7.16</node>
+    <node x="380.0" y="0.0">junit:junit:jar:4.12</node>
+    <node x="561.0" y="0.0">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
+    <node x="803.0" y="26.5">org.springframework:spring-test:jar:4.2.5.RELEASE</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-aop:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-aop:jar:4.2.5.RELEASE/aopalliance:aopalliance:jar:1.0">
+      <point x="54.5" y="-0.0" />
+      <point x="-56.5" y="-0.0" />
+    </edge>
+    <edge source="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-expression:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE">
+      <point x="79.5" y="-0.0" />
+      <point x="-57.5" y="-9.142857142857139" />
+    </edge>
+    <edge source="com.bitdubai.fermat:fermat-db-node-plugin-example:1.0.0" target="org.springframework:spring-test:jar:4.2.5.RELEASE">
+      <point x="131.5" y="-10.0" />
+      <point x="343.0" y="42.5" />
+      <point x="-55.5" y="-0.0" />
+    </edge>
+    <edge source="org.springframework:spring-tx:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE">
+      <point x="48.5" y="8.0" />
+      <point x="699.0" y="281.7697044334975" />
+      <point x="779.0" y="296.014367816092" />
+      <point x="938.0" y="296.014367816092" />
+      <point x="-57.5" y="9.142857142857139" />
+    </edge>
+    <edge source="com.bitdubai.fermat:fermat-db-node-plugin-example:1.0.0" target="com.zaxxer:HikariCP:jar:2.4.5">
+      <point x="131.5" y="14.0" />
+      <point x="343.0" y="436.2697044334975" />
+      <point x="-46.0" y="-0.0" />
+    </edge>
+    <edge source="org.springframework:spring-jdbc:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE">
+      <point x="56.0" y="10.666666666666686" />
+      <point x="938.0" y="374.93637110016425" />
+      <point x="-57.5" y="13.714285714285722" />
+    </edge>
+    <edge source="junit:junit:jar:4.12" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3">
+      <point x="32.0" y="-0.0" />
+      <point x="-69.0" y="-0.0" />
+    </edge>
+    <edge source="org.springframework:spring-jdbc:jar:4.2.5.RELEASE" target="org.springframework:spring-tx:jar:4.2.5.RELEASE">
+      <point x="56.0" y="-10.666666666666686" />
+      <point x="481.0" y="353.6030377668309" />
+      <point x="561.0" y="281.7697044334975" />
+      <point x="-48.5" y="8.0" />
+    </edge>
+    <edge source="com.bitdubai.fermat:fermat-db-node-plugin-example:1.0.0" target="org.jooq:jooq:jar:3.7.3">
+      <point x="131.5" y="-6.0" />
+      <point x="343.0" y="91.80870279146141" />
+      <point x="-32.0" y="-0.0" />
+    </edge>
+    <edge source="com.bitdubai.fermat:fermat-db-node-plugin-example:1.0.0" target="org.springframework:spring-jdbc:jar:4.2.5.RELEASE">
+      <point x="131.5" y="10.0" />
+      <point x="343.0" y="364.2697044334975" />
+      <point x="-56.0" y="-0.0" />
+    </edge>
+    <edge source="org.springframework:spring-context:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-expression:jar:4.2.5.RELEASE">
+      <point x="69.0" y="-12.0" />
+      <point x="561.0" y="121.75" />
+      <point x="-79.5" y="-0.0" />
+    </edge>
+    <edge source="com.bitdubai.fermat:fermat-db-node-plugin-example:1.0.0" target="org.springframework:spring-context:jar:4.2.5.RELEASE">
+      <point x="131.5" y="-2.0" />
+      <point x="-69.0" y="-0.0" />
+    </edge>
+    <edge source="org.springframework:spring-context:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-beans:jar:4.2.5.RELEASE">
+      <point x="69.0" y="12.0" />
+      <point x="561.0" y="247.26970443349757" />
+      <point x="699.0" y="247.26970443349757" />
+      <point x="779.0" y="261.514367816092" />
+      <point x="-62.5" y="-4.0" />
+    </edge>
+    <edge source="com.bitdubai.fermat:fermat-db-node-plugin-example:1.0.0" target="org.springframework:spring-tx:jar:4.2.5.RELEASE">
+      <point x="131.5" y="2.0" />
+      <point x="343.0" y="265.7697044334975" />
+      <point x="-48.5" y="-8.0" />
+    </edge>
+    <edge source="com.bitdubai.fermat:fermat-db-node-plugin-example:1.0.0" target="org.xerial:sqlite-jdbc:jar:3.8.11.2">
+      <point x="131.5" y="6.0" />
+      <point x="343.0" y="292.2697044334975" />
+      <point x="-53.5" y="-0.0" />
+    </edge>
+    <edge source="com.zaxxer:HikariCP:jar:2.4.5" target="com.zaxxer:HikariCP:jar:2.4.5/org.slf4j:slf4j-api:jar:1.7.16">
+      <point x="46.0" y="-0.0" />
+      <point x="-44.0" y="-0.0" />
+    </edge>
+    <edge source="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-beans:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE">
+      <point x="62.5" y="-0.0" />
+      <point x="938.0" y="265.514367816092" />
+      <point x="-57.5" y="4.571428571428584" />
+    </edge>
+    <edge source="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-aop:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE">
+      <point x="54.5" y="-10.666666666666657" />
+      <point x="699.0" y="166.36904761904762" />
+      <point x="779.0" y="154.8444170771757" />
+      <point x="938.0" y="154.8444170771757" />
+      <point x="-57.5" y="-0.0" />
+    </edge>
+    <edge source="org.springframework:spring-context:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-aop:jar:4.2.5.RELEASE">
+      <point x="69.0" y="4.0" />
+      <point x="561.0" y="177.03571428571428" />
+      <point x="-54.5" y="-0.0" />
+    </edge>
+    <edge source="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-aop:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-beans:jar:4.2.5.RELEASE">
+      <point x="54.5" y="10.666666666666657" />
+      <point x="699.0" y="187.70238095238093" />
+      <point x="779.0" y="253.51436781609198" />
+      <point x="-62.5" y="-12.0" />
+    </edge>
+    <edge source="org.springframework:spring-test:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE">
+      <point x="55.5" y="-0.0" />
+      <point x="938.0" y="42.5" />
+      <point x="-57.5" y="-13.714285714285722" />
+    </edge>
+    <edge source="org.springframework:spring-jdbc:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-beans:jar:4.2.5.RELEASE">
+      <point x="56.0" y="-0.0" />
+      <point x="699.0" y="364.2697044334975" />
+      <point x="779.0" y="277.514367816092" />
+      <point x="-62.5" y="12.0" />
+    </edge>
+    <edge source="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE/commons-logging:commons-logging:jar:1.2">
+      <point x="57.5" y="-0.0" />
+      <point x="-80.0" y="-0.0" />
+    </edge>
+    <edge source="com.bitdubai.fermat:fermat-db-node-plugin-example:1.0.0" target="junit:junit:jar:4.12">
+      <point x="131.5" y="-14.0" />
+      <point x="343.0" y="16.0" />
+      <point x="-32.0" y="-0.0" />
+    </edge>
+    <edge source="org.springframework:spring-tx:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-beans:jar:4.2.5.RELEASE">
+      <point x="48.5" y="-8.0" />
+      <point x="-62.5" y="4.0" />
+    </edge>
+    <edge source="org.springframework:spring-context:jar:4.2.5.RELEASE" target="org.springframework:spring-context:jar:4.2.5.RELEASE/org.springframework:spring-core:jar:4.2.5.RELEASE">
+      <point x="69.0" y="-4.0" />
+      <point x="561.0" y="148.25" />
+      <point x="938.0" y="148.25" />
+      <point x="-57.5" y="-4.571428571428584" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6776740847092606" x="686.5" y="226.5" />
+  <SelectedNodes />
+  <Categories />
+  <VISIBILITY>All</VISIBILITY>
+</Diagram>
+

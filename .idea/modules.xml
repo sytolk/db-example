@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fermat-db.iml" filepath="$PROJECT_DIR$/fermat-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fermat-db-derby-template/fermat-db-derby-template.iml" filepath="$PROJECT_DIR$/fermat-db-derby-template/fermat-db-derby-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fermat-db-node-plugin-example/fermat-db-node-plugin-example.iml" filepath="$PROJECT_DIR$/fermat-db-node-plugin-example/fermat-db-node-plugin-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fermat-db-sqlite-template/fermat-db-sqlite-template.iml" filepath="$PROJECT_DIR$/fermat-db-sqlite-template/fermat-db-sqlite-template.iml" />
+    </modules>
+  </component>
+</project>

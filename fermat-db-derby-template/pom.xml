@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.bitdubai.fermat</groupId>
+        <artifactId>fermat-db</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <artifactId>fermat-db-derby-template</artifactId>
+    <name>Fermat DataBase Derby Template Module</name>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <!--TODO-->
+</project>
