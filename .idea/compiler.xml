@@ -22,16 +22,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fermat-db-derby-template" />
-        <module name="fermat-db-node-plugin-example" />
-        <module name="fermat-db-sqlite-template" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fermat-db" target="1.7" />
       <module name="fermat-db-derby-template" target="1.7" />
+      <module name="fermat-db-derby-template_main" target="1.7" />
+      <module name="fermat-db-derby-template_test" target="1.7" />
       <module name="fermat-db-node-plugin-example" target="1.7" />
+      <module name="fermat-db-node-plugin-example_main" target="1.7" />
+      <module name="fermat-db-node-plugin-example_test" target="1.7" />
       <module name="fermat-db-sqlite-template" target="1.7" />
+      <module name="fermat-db-sqlite-template_main" target="1.7" />
+      <module name="fermat-db-sqlite-template_test" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

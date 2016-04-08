@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/fermat-db.iml" filepath="$PROJECT_DIR$/fermat-db.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fermat-db-derby-template/fermat-db-derby-template.iml" filepath="$PROJECT_DIR$/fermat-db-derby-template/fermat-db-derby-template.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fermat-db-node-plugin-example/fermat-db-node-plugin-example.iml" filepath="$PROJECT_DIR$/fermat-db-node-plugin-example/fermat-db-node-plugin-example.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fermat-db-sqlite-template/fermat-db-sqlite-template.iml" filepath="$PROJECT_DIR$/fermat-db-sqlite-template/fermat-db-sqlite-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fermat-db.iml" filepath="$PROJECT_DIR$/.idea/modules/fermat-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fermat-db-derby-template/fermat-db-derby-template.iml" filepath="$PROJECT_DIR$/.idea/modules/fermat-db-derby-template/fermat-db-derby-template.iml" group="fermat-db-derby-template" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fermat-db-derby-template/fermat-db-derby-template_main.iml" filepath="$PROJECT_DIR$/.idea/modules/fermat-db-derby-template/fermat-db-derby-template_main.iml" group="fermat-db-derby-template" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fermat-db-derby-template/fermat-db-derby-template_test.iml" filepath="$PROJECT_DIR$/.idea/modules/fermat-db-derby-template/fermat-db-derby-template_test.iml" group="fermat-db-derby-template" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fermat-db-node-plugin-example/fermat-db-node-plugin-example.iml" filepath="$PROJECT_DIR$/.idea/modules/fermat-db-node-plugin-example/fermat-db-node-plugin-example.iml" group="fermat-db-node-plugin-example" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fermat-db-node-plugin-example/fermat-db-node-plugin-example_main.iml" filepath="$PROJECT_DIR$/.idea/modules/fermat-db-node-plugin-example/fermat-db-node-plugin-example_main.iml" group="fermat-db-node-plugin-example" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fermat-db-node-plugin-example/fermat-db-node-plugin-example_test.iml" filepath="$PROJECT_DIR$/.idea/modules/fermat-db-node-plugin-example/fermat-db-node-plugin-example_test.iml" group="fermat-db-node-plugin-example" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fermat-db-sqlite-template/fermat-db-sqlite-template.iml" filepath="$PROJECT_DIR$/.idea/modules/fermat-db-sqlite-template/fermat-db-sqlite-template.iml" group="fermat-db-sqlite-template" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fermat-db-sqlite-template/fermat-db-sqlite-template_main.iml" filepath="$PROJECT_DIR$/.idea/modules/fermat-db-sqlite-template/fermat-db-sqlite-template_main.iml" group="fermat-db-sqlite-template" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fermat-db-sqlite-template/fermat-db-sqlite-template_test.iml" filepath="$PROJECT_DIR$/.idea/modules/fermat-db-sqlite-template/fermat-db-sqlite-template_test.iml" group="fermat-db-sqlite-template" />
     </modules>
   </component>
 </project>

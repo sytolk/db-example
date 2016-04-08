@@ -1,0 +1,8 @@
+rootProject.name = 'fermat-db'
+include ':fermat-db-sqlite-template'
+include ':fermat-db-derby-template'
+include ':fermat-db-node-plugin-example'
+
+project(':fermat-db-sqlite-template').projectDir = "$rootDir/fermat-db-sqlite-template" as File
+project(':fermat-db-derby-template').projectDir = "$rootDir/fermat-db-derby-template" as File
+project(':fermat-db-node-plugin-example').projectDir = "$rootDir/fermat-db-node-plugin-example" as File

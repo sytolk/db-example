@@ -1,0 +1,53 @@
+description = 'Fermat DataBase Sqlite Template Module'
+dependencies {
+    compile group: 'org.jooq', name: 'jooq', version:'3.7.3'
+    compile group: 'org.xerial', name: 'sqlite-jdbc', version:'3.8.11.2'
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'org.jooq:jooq-codegen:3.7.3'
+        classpath 'org.xerial:sqlite-jdbc:3.8.11.2'
+    }
+}
+
+// Use your favourite XML builder to construct the code generation configuration file
+// ----------------------------------------------------------------------------------
+def writer = new StringWriter()
+def xml = new groovy.xml.MarkupBuilder(writer)
+        .configuration('xmlns': 'http://www.jooq.org/xsd/jooq-codegen-3.7.0.xsd') {
+    jdbc() {
+        driver('org.sqlite.JDBC')
+        url('jdbc:sqlite:node.db')
+        /*user('sa')
+        password('')*/
+    }
+    generator() {
+        database() {
+        }
+
+        // Watch out for this caveat when using MarkupBuilder with "reserved names"
+        // - https://github.com/jOOQ/jOOQ/issues/4797
+        // - http://stackoverflow.com/a/11389034/521799
+        // - https://groups.google.com/forum/#!topic/jooq-user/wi4S9rRxk4A
+        generate([:]) {
+            pojos true
+            daos true
+        }
+        target() {
+            packageName('com.bitdubai.fermat.db.sqlite.generated')
+            directory('src/main/java')
+        }
+    }
+}
+
+// Run the code generator
+// ----------------------
+org.jooq.util.GenerationTool.generate(
+        javax.xml.bind.JAXB.unmarshal(new StringReader(writer.toString()), org.jooq.util.jaxb.Configuration.class)
+)
