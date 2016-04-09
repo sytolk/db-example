@@ -1,6 +1,6 @@
 # db-node-plugin-example
 
-Example usage of Sqlite template to build Server side Linux Windows fermat node app.
+In this example we have choose to use DB Sqlite template to build Server side Linux Windows fermat node app. (DB can be easily changed to Derby after SQL export -create derby.db and copy Jooq code generation plugin from Derby template project )
 
 This node app will be installed on Linux Server that have a public IP address.
 
